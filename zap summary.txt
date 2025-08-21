@@ -1,0 +1,31 @@
+New message posted to channel
+Trigger for bot messages: No. (para evitar bucles)
+
+------
+
+JIRA get epics: JQL: project = RD and created >= "-60d" and status in ( "In progress" , "To Do" ) and type in ("Epic")
+if multiple searches are found: return as line items.
+
+----
+
+get all JIRA tickets: JQL: project = RD and created >= "-30d" and status not in ( "Deployed" , "Merged", "In review" ) and type in ("Task", "Story", "Bug")
+
+----
+
+Analyze and return data using prompt: (zap summary.txt)
+
+----
+
+Create JIRA issue: use the info we got from the prompt to create the issue.
+
+---
+
+Move issue to sprint: (hardcoded active sprint)
+
+---
+
+Send channel message: Thread: use original message ts field to answer in thread. Use Issue URL from JIRA issue creation step.
+
+---
+
+Loop condition for linking JIRA dependencies. 
