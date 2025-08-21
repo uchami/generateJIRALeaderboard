@@ -12,7 +12,7 @@ get all JIRA tickets: JQL: project = RD and created >= "-30d" and status not in 
 
 ----
 
-Analyze and return data using prompt: (zap summary.txt)
+Analyze and return data using prompt: (prompt for zapier.txt)
 
 ----
 
